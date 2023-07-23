@@ -25,8 +25,8 @@ class Weather extends ApiCall{
   }
   private function getWeather(int|float $latitude,int|float $longitude):void
   {
-    //to get api key go https://openweathermap.org
-    $apikey = 'API KEY HERE';
+    
+    $apikey = 'b59d35bda22d0eaf6ad699b7e11c0114';
     $url = 'https://api.openweathermap.org/data/2.5/weather?lat='.$latitude.'&lon='.$longitude.'&appid='.$apikey.'&units=metric';
     
     $apidata = $this->apiCall($url);
@@ -34,4 +34,3 @@ class Weather extends ApiCall{
   }
 
 }
-//   b59d35bda22d0eaf6ad699b7e11c0114
